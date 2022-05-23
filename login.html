@@ -14,34 +14,78 @@
         .box_principal {
             background-color: #f4f4f4;
             box-sizing: border-box;
-            width: 250px;
-            height: 300px;
-            padding: 25px 25px 25px 30px;
+            width: 16rem;
+            height: 19rem;
+            padding: 1.6rem 1.6rem 1.6rem 2rem;
             margin: auto;
-            border-radius: 10px;
+            border-radius: 1.6rem;
             font-weight: bold;
         }
         .subescrito{
-            font-size: 13px;
+            font-size: 0.9rem;
             font-weight: bold;
         }
         .btn{
             background-color: #05285b;
             color: #f4f4f4;
             border: none;
-            width: 195px;
-            border-radius: 5px;
+            width: 12rem;
+            border-radius: 0.3rem;
             cursor: pointer;
         }
         .btn:hover{
             background-color: #1a5fb4;
-            color: #e6d11f
+            color: #e6d11f;
+        }
+
+        nav {
+            background-color: #05285b;
+            height: 5vh;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        .flex_container{
+            display: flex;
+            padding: 0.5rem;
+        }
+
+        .nav-btn{
+            text-align: center;
+            padding: 0.3rem;
+            margin: 0.1rem;
+           
+            
+        }
+
+        .nav-btn a{
+            color: #f4f4f4;
+            text-decoration: none;
+
+        }
+        .nav-btn a:hover{
+            color: #e6d11f;
+            
+        }
+
+        .form-box{
+            padding: 1rem;
         }
 
     </style>
 </head>
 <body>
-    <form action="login">
+    <nav class="flex_container">
+        <div class="nav-btn">
+        <a href="#">Home</a>
+        </div>
+        <div class="nav-btn"> 
+            <a href="#">Sobre nós</a>
+        </div>
+        <div class="nav-btn">
+            <a href="/login.html">Login</a>
+        </div>        
+    </nav>
+    <form action="login" class="form-box">
         <div class="box_principal">
             <img src="/ITA Jr LogoEscuro.png" alt = "logo" width="200px"> 
             <br>
